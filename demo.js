@@ -3,7 +3,7 @@ webpackJsonp([0],{
 /***/ "./README.md":
 /***/ (function(module, exports) {
 
-module.exports = "<h1 id=\"react-bank-card\">react-bank-card</h1>\n<p><a href=\"https://www.npmjs.org/package/react-bank-card\"><img src=\"https://img.shields.io/npm/v/react-bank-card.svg?style=flat-square\" alt=\"npm package\"></a>\n<a href=\"https://travis-ci.org/xuopled/react-bank-card\"><img src=\"https://img.shields.io/travis/xuopled/react-bank-card/master.svg?style=flat-square\" alt=\"Travis\"></a>\n<a href=\"https://codecov.io/gh/xuopled/react-bank-card\"><img src=\"https://img.shields.io/codecov/c/github/xuopled/react-bank-card.svg?style=flat-square\" alt=\"Codecov\"></a>\n<img src=\"https://img.shields.io/badge/module%20formats-umd%2C%20cjs%2C%20esm-green.svg?style=flat-square\" alt=\"Module formats\"></p>\n<p><code>react-card-bank</code> checks your <code>number</code> prop and display on of these three folowwing logos if <code>number</code> is recognized ad credit card number:</p>\n<ul>\n<li>Visa</li>\n<li>MasterCard</li>\n<li>Cb</li>\n</ul>\n<p>You can hightlight specific field (to match with your form field).</p>\n<blockquote>\n<p>There is also the card verso displayed following <code>verso</code> prop.</p>\n</blockquote>\n<h2 id=\"getting-started\">Getting started</h2>\n<p><a href=\"https://nodei.co/npm/react-bank-card/\"><img src=\"https://nodei.co/npm/react-bank-card.png?downloads=true&amp;downloadRank=true&amp;stars=true\" alt=\"react-bank-card\"></a></p>\n<p>You can download <code>react-bank-card</code> from the NPM registry via the <code>npm</code> or <code>yarn</code> commands</p>\n<pre><code class=\"lang-shell\">yarn add react-bank-card\nnpm install react-bank-card --save\n</code></pre>\n<p>If you don&#39;t use package manager and you want to include <code>react-bank-card</code> directly in your html, you could get it from the UNPKG CDN</p>\n<pre><code class=\"lang-html\">https://unpkg.com/react-bank-card/dist/react-bank-card.min.js.\n</code></pre>\n<h2 id=\"usage\">Usage</h2>\n<pre><code class=\"lang-javascript\">import React from &quot;react&quot;\nimport BankCard from &quot;react-bank-card&quot;\n\nconst App = () =&gt;\n  &lt;ReactBankCard\n    cvc=&quot;123&quot;\n    expirationMonth={10}\n    expirationYear={19}\n    number=&quot;4929588303328334&quot;\n    name=&quot;XuopleD&quot;\n    highlighted={{\n      number: true,\n      name: false,\n      cvc: true,\n      expirationMonth: false,\n      expirationYear: false,\n    }}\n  /&gt;\n</code></pre>\n<h2 id=\"demo\">Demo</h2>\n<p>See <a href=\"https://xuopled.github.io/react-bank-card\">Demo page</a></p>\n<h2 id=\"contributing\">Contributing</h2>\n<ul>\n<li>⇄ Pull/Merge requests and ★ Stars are always welcome.</li>\n<li>For bugs and feature requests, please <a href=\"https://github.com/xuopled/react-bank-card/issues/new\">create an issue</a>.</li>\n<li>Pull requests must be accompanied by passing automated tests (<code>npm test</code>).</li>\n</ul>\n<p>See <a href=\"./CONTRIBUTING.md\">CONTRIBUTING.md</a> guidelines</p>\n<h2 id=\"changelog\">Changelog</h2>\n<p>See <a href=\"./CHANGELOG.md\">changelog</a></p>\n<h2 id=\"license\">License</h2>\n<p>This project is licensed under the MIT License - see the <a href=\"./LICENCE.md\">LICENCE.md</a> file for details</p>\n";
+module.exports = "<h1 id=\"react-bank-card\">react-bank-card</h1>\n<p><a href=\"https://www.npmjs.org/package/react-bank-card\"><img src=\"https://img.shields.io/npm/v/react-bank-card.svg?style=flat-square\" alt=\"npm package\"></a>\n<a href=\"https://travis-ci.org/xuopled/react-bank-card\"><img src=\"https://img.shields.io/travis/xuopled/react-bank-card/master.svg?style=flat-square\" alt=\"Travis\"></a>\n<a href=\"https://codecov.io/gh/xuopled/react-bank-card\"><img src=\"https://img.shields.io/codecov/c/github/xuopled/react-bank-card.svg?style=flat-square\" alt=\"Codecov\"></a>\n<img src=\"https://img.shields.io/badge/module%20formats-umd%2C%20cjs%2C%20esm-green.svg?style=flat-square\" alt=\"Module formats\"></p>\n<p><code>react-card-bank</code> checks your <code>number</code> prop and display on of these three folowwing logos if <code>number</code> is recognized ad credit card number:</p>\n<ul>\n<li>Visa</li>\n<li>MasterCard</li>\n<li>Cb</li>\n</ul>\n<p>You can hightlight specific field (to match with your form field).</p>\n<blockquote>\n<p>There is also the card verso displayed following <code>verso</code> prop.</p>\n</blockquote>\n<h2 id=\"getting-started\">Getting started</h2>\n<p><a href=\"https://nodei.co/npm/react-bank-card/\"><img src=\"https://nodei.co/npm/react-bank-card.png?downloads=true&amp;downloadRank=true&amp;stars=true\" alt=\"react-bank-card\"></a></p>\n<p>You can download <code>react-bank-card</code> from the NPM registry via the <code>npm</code> or <code>yarn</code> commands</p>\n<pre><code class=\"lang-shell\">yarn add react-bank-card\nnpm install react-bank-card --save\n</code></pre>\n<p>If you don&#39;t use package manager and you want to include <code>react-bank-card</code> directly in your html, you could get it from the UNPKG CDN</p>\n<pre><code class=\"lang-html\">https://unpkg.com/react-bank-card/dist/react-bank-card.min.js.\n</code></pre>\n<h2 id=\"usage\">Usage</h2>\n<pre><code class=\"lang-javascript\">import React from &quot;react&quot;\nimport BankCard from &quot;react-bank-card&quot;\n\nconst App = () =&gt;\n  &lt;ReactBankCard\n    cvc=&quot;123&quot;\n    expiryMonth={10}\n    expiryYear={19}\n    number=&quot;4929588303328334&quot;\n    name=&quot;XuopleD&quot;\n    highlighted={{\n      number: true,\n      name: false,\n      cvc: true,\n      expiryMonth: false,\n      expiryYear: false,\n    }}\n  /&gt;\n</code></pre>\n<h2 id=\"demo\">Demo</h2>\n<p>See <a href=\"https://xuopled.github.io/react-bank-card\">Demo page</a></p>\n<h2 id=\"contributing\">Contributing</h2>\n<ul>\n<li>⇄ Pull/Merge requests and ★ Stars are always welcome.</li>\n<li>For bugs and feature requests, please <a href=\"https://github.com/xuopled/react-bank-card/issues/new\">create an issue</a>.</li>\n<li>Pull requests must be accompanied by passing automated tests (<code>npm test</code>).</li>\n</ul>\n<p>See <a href=\"./CONTRIBUTING.md\">CONTRIBUTING.md</a> guidelines</p>\n<h2 id=\"changelog\">Changelog</h2>\n<p>See <a href=\"./CHANGELOG.md\">changelog</a></p>\n<h2 id=\"license\">License</h2>\n<p>This project is licensed under the MIT License - see the <a href=\"./LICENCE.md\">LICENCE.md</a> file for details</p>\n";
 
 /***/ }),
 
@@ -87,16 +87,16 @@ var routes = [{
   demo: {
     component: __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__src__["a" /* default */], {
       cvc: "123",
-      expirationMonth: 10,
-      expirationYear: 19,
+      expiryMonth: 10,
+      expiryYear: 19,
       number: "4929588303328334",
       name: "XuopleD",
       highlighted: {
         number: true,
         name: false,
         cvc: true,
-        expirationMonth: false,
-        expirationYear: false
+        expiryMonth: false,
+        expiryYear: false
       }
     }),
     displayName: "ReactBankCard",
@@ -33217,9 +33217,7 @@ var Chip = __WEBPACK_IMPORTED_MODULE_0_styled_components__["a" /* default */].di
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_prop_types__ = __webpack_require__("./node_modules/prop-types/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__("./node_modules/react/react.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_styled_components__ = __webpack_require__("./node_modules/styled-components/dist/styled-components.es.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_styled_components__ = __webpack_require__("./node_modules/styled-components/dist/styled-components.es.js");
 var _templateObject = _taggedTemplateLiteralLoose(["\n  color: rgba(255, 255, 255, 0.5);\n  font-family: Courier, monospace;\n  white-space: nowrap;\n  overflow: hidden;\n  border: 3px solid transparent;\n  ", ";\n"], ["\n  color: rgba(255, 255, 255, 0.5);\n  font-family: Courier, monospace;\n  white-space: nowrap;\n  overflow: hidden;\n  border: 3px solid transparent;\n  ", ";\n"]);
 
 function _taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw; return strings; }
@@ -33227,20 +33225,9 @@ function _taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw; return s
 
 
 
-
-var StyledField = __WEBPACK_IMPORTED_MODULE_2_styled_components__["a" /* default */].span(_templateObject, function (props) {
+var Field = __WEBPACK_IMPORTED_MODULE_1_styled_components__["a" /* default */].span(_templateObject, function (props) {
   return props.highlighted && "border-color: #ff8000;";
 });
-
-var Field = function Field(_ref) {
-  var highlighted = _ref.highlighted,
-      value = _ref.value;
-  return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-    StyledField,
-    { highlighted: highlighted },
-    value
-  );
-};
 
 Field.propTypes = {
   highlighted: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.bool,
@@ -33443,7 +33430,7 @@ Logo.propTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_Logo__ = __webpack_require__("./src/components/Logo/index.js");
 var _templateObject = _taggedTemplateLiteralLoose(["\n  width: 100%;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n"], ["\n  width: 100%;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n"]),
     _templateObject2 = _taggedTemplateLiteralLoose(["\n  font-size: .875rem;\n  margin-left: .625rem;\n  width: 2rem;\n  text-align: left;\n"], ["\n  font-size: .875rem;\n  margin-left: .625rem;\n  width: 2rem;\n  text-align: left;\n"]),
-    _templateObject3 = _taggedTemplateLiteralLoose(["\n  font-size: 1.25rem;\n"], ["\n  font-size: 1.25rem;\n"]),
+    _templateObject3 = _taggedTemplateLiteralLoose(["font-size: 1.25rem;"], ["font-size: 1.25rem;"]),
     _templateObject4 = _taggedTemplateLiteralLoose(["\n  font-size: 1.5rem;\n  width: 100%;\n"], ["\n  font-size: 1.5rem;\n  width: 100%;\n"]),
     _templateObject5 = _taggedTemplateLiteralLoose(["margin-left: 10px;"], ["margin-left: 10px;"]),
     _templateObject6 = _taggedTemplateLiteralLoose(["\n  width: 330px;\n  transform-style: preserve-3d;\n  transition: all 400ms linear;\n  position: relative;\n\n  &::before {\n    content: '';\n    display: block;\n    padding-top: 66.66%; /* 3:2 ratio */\n  }\n\n  ", ";\n"], ["\n  width: 330px;\n  transform-style: preserve-3d;\n  transition: all 400ms linear;\n  position: relative;\n\n  &::before {\n    content: '';\n    display: block;\n    padding-top: 66.66%; /* 3:2 ratio */\n  }\n\n  ", ";\n"]),
@@ -33478,11 +33465,11 @@ var DEFAULT_CVC = "•••";
 
 var Line = __WEBPACK_IMPORTED_MODULE_2_styled_components__["a" /* default */].div(_templateObject);
 
-var CvcField = Object(__WEBPACK_IMPORTED_MODULE_2_styled_components__["a" /* default */])(__WEBPACK_IMPORTED_MODULE_4__components_Field__["a" /* default */])(_templateObject2);
+var CvcField = __WEBPACK_IMPORTED_MODULE_4__components_Field__["a" /* default */].extend(_templateObject2);
 
-var NameField = Object(__WEBPACK_IMPORTED_MODULE_2_styled_components__["a" /* default */])(__WEBPACK_IMPORTED_MODULE_4__components_Field__["a" /* default */])(_templateObject3);
+var NameField = __WEBPACK_IMPORTED_MODULE_4__components_Field__["a" /* default */].extend(_templateObject3);
 
-var NumberField = Object(__WEBPACK_IMPORTED_MODULE_2_styled_components__["a" /* default */])(__WEBPACK_IMPORTED_MODULE_4__components_Field__["a" /* default */])(_templateObject4);
+var NumberField = __WEBPACK_IMPORTED_MODULE_4__components_Field__["a" /* default */].extend(_templateObject4);
 
 var Expiry = __WEBPACK_IMPORTED_MODULE_2_styled_components__["a" /* default */].div(_templateObject5);
 
@@ -33512,8 +33499,8 @@ var ReactBankCard = function (_Component) {
 
   ReactBankCard.prototype.renderRecto = function renderRecto() {
     var _props = this.props,
-        expirationMonth = _props.expirationMonth,
-        expirationYear = _props.expirationYear,
+        expiryMonth = _props.expiryMonth,
+        expiryYear = _props.expiryYear,
         highlighted = _props.highlighted,
         name = _props.name,
         number = _props.number;
@@ -33532,29 +33519,33 @@ var ReactBankCard = function (_Component) {
       __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
         Line,
         null,
-        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(NumberField, {
-          highlighted: highlighted && highlighted.number,
-          value: spacedNumber
-        })
+        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+          NumberField,
+          { highlighted: highlighted && highlighted.number },
+          spacedNumber
+        )
       ),
       __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
         Line,
         null,
-        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(NameField, {
-          highlighted: highlighted && highlighted.name,
-          value: name
-        }),
+        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+          NameField,
+          { highlighted: highlighted && highlighted.name },
+          name || DEFAULT_NAME
+        ),
         __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
           Expiry,
           null,
-          __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_Field__["a" /* default */], {
-            highlighted: highlighted && highlighted.expirationMonth,
-            value: expirationMonth
-          }),
-          __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_Field__["a" /* default */], {
-            highlighted: highlighted && highlighted.expirationYear,
-            value: expirationYear
-          })
+          __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+            __WEBPACK_IMPORTED_MODULE_4__components_Field__["a" /* default */],
+            { highlighted: highlighted && highlighted.expiryMonth },
+            expiryMonth || DEFAULT_EXPIRY_MONTH
+          ),
+          __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+            __WEBPACK_IMPORTED_MODULE_4__components_Field__["a" /* default */],
+            { highlighted: highlighted && highlighted.expiryYear },
+            expiryYear || DEFAULT_EXPIRY_YEAR
+          )
         )
       )
     );
@@ -33577,7 +33568,11 @@ var ReactBankCard = function (_Component) {
         Line,
         null,
         __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(Signature, null),
-        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(CvcField, { value: cvc, highlighted: highlighted && highlighted.cvc })
+        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+          CvcField,
+          { highlighted: highlighted && highlighted.cvc },
+          cvc || DEFAULT_CVC
+        )
       ),
       __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
         Line,
@@ -33603,8 +33598,8 @@ var ReactBankCard = function (_Component) {
 
 ReactBankCard.propTypes = {
   cvc: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.oneOfType([__WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string, __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.number]),
-  expirationMonth: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.oneOfType([__WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string, __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.number]),
-  expirationYear: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.oneOfType([__WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string, __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.number]),
+  expiryMonth: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.oneOfType([__WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string, __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.number]),
+  expiryYear: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.oneOfType([__WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string, __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.number]),
   highlighted: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.object,
   name: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string,
   number: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.oneOfType([__WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string, __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.number]),
@@ -33613,8 +33608,8 @@ ReactBankCard.propTypes = {
 
 ReactBankCard.defaultProps = {
   cvc: DEFAULT_CVC,
-  expirationMonth: DEFAULT_EXPIRY_MONTH,
-  expirationYear: DEFAULT_EXPIRY_YEAR,
+  expiryMonth: DEFAULT_EXPIRY_MONTH,
+  expiryYear: DEFAULT_EXPIRY_YEAR,
   highlighted: null,
   name: DEFAULT_NAME,
   number: DEFAULT_NUMBER,
