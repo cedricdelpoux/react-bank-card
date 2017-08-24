@@ -33190,7 +33190,7 @@ module.exports = g;
 /***/ "./package.json":
 /***/ (function(module, exports) {
 
-module.exports = {"name":"react-bank-card","version":"0.1.0","author":{"name":"Cédric Delpoux","email":"xuopled@gmail.com"},"description":"Display credit bank card","files":["css","es","lib","umd"],"homepage":"https://github.com/xuopled/react-bank-card#readme","keywords":["react","credit","bank","card"],"license":"MIT","main":"lib/index.js","module":"es/index.js","style":"umd/index.css","repository":{"type":"git","url":"git+https://github.com/xuopled/react-bank-card.git"},"scripts":{"build":"nwb build-react-component","clean":"nwb clean-module && nwb clean-demo","demo:deploy":"gh-pages -d demo/dist","demo:start":"nwb serve-react-demo --port 1190","lint":"eslint src demo/src","precommit":"lint-staged","test":"jest --config jest.config.json --colors --no-cache","test:watch":"npm test -- --watch"},"dependencies":{"credit-card-regex":"^2.0.0","luhn":"^2.1.0","prop-types":"^15.5.0","styled-components":"^2.1.2"},"devDependencies":{"babel-eslint":"^7.2.3","babel-jest":"^20.0.3","babel-plugin-transform-object-rest-spread":"^6.26.0","babel-preset-es2015":"^6.24.1","babel-preset-react":"^6.24.1","enzyme":"^2.9.1","eslint":"^4.5.0","eslint-config-prettier":"^2.3.0","eslint-loader":"^1.9.0","eslint-plugin-jest":"^20.0.3","eslint-plugin-prettier":"^2.1.2","eslint-plugin-react":"^7.3.0","gh-pages":"^1.0.0","html-loader":"^0.5.1","husky":"^0.14.3","jest":"^20.0.4","jest-css-modules":"^1.1.0","lint-staged":"^4.0.2","markdown-loader":"^2.0.1","nwb":"^0.18.0","prettier":"^1.5.3","react":"^15.6.1","react-demo-page":"^0.2.2","react-dom":"^15.6.1","react-test-renderer":"^15.6.1"},"peerDependencies":{"react":"^15.6.0","react-dom":"^15.6.0"}}
+module.exports = {"name":"react-bank-card","version":"0.1.0","author":{"name":"Cédric Delpoux","email":"xuopled@gmail.com"},"description":"React component to display nice credit bank card","files":["css","es","lib","umd"],"homepage":"https://github.com/xuopled/react-bank-card#readme","keywords":["react","credit","bank","card"],"license":"MIT","main":"lib/index.js","module":"es/index.js","style":"umd/index.css","repository":{"type":"git","url":"git+https://github.com/xuopled/react-bank-card.git"},"scripts":{"build":"nwb build-react-component","clean":"nwb clean-module && nwb clean-demo","demo:deploy":"gh-pages -d demo/dist","demo:start":"nwb serve-react-demo --port 1190","lint":"eslint src demo/src","precommit":"lint-staged","test":"jest --config jest.config.json --colors --no-cache","test:watch":"npm test -- --watch"},"dependencies":{"credit-card-regex":"^2.0.0","luhn":"^2.1.0","prop-types":"^15.5.0","styled-components":"^2.1.2"},"devDependencies":{"babel-eslint":"^7.2.3","babel-jest":"^20.0.3","babel-plugin-transform-object-rest-spread":"^6.26.0","babel-preset-es2015":"^6.24.1","babel-preset-react":"^6.24.1","enzyme":"^2.9.1","eslint":"^4.5.0","eslint-config-prettier":"^2.3.0","eslint-loader":"^1.9.0","eslint-plugin-jest":"^20.0.3","eslint-plugin-prettier":"^2.1.2","eslint-plugin-react":"^7.3.0","gh-pages":"^1.0.0","html-loader":"^0.5.1","husky":"^0.14.3","jest":"^20.0.4","jest-css-modules":"^1.1.0","lint-staged":"^4.0.2","markdown-loader":"^2.0.1","nwb":"^0.18.0","prettier":"^1.5.3","react":"^15.6.1","react-demo-page":"^0.2.2","react-dom":"^15.6.1","react-test-renderer":"^15.6.1"},"peerDependencies":{"react":"^15.6.0","react-dom":"^15.6.0"}}
 
 /***/ }),
 
@@ -33244,7 +33244,7 @@ var Field = function Field(_ref) {
 
 Field.propTypes = {
   highlighted: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.bool,
-  value: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string
+  value: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.oneOfType([__WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string, __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.number])
 };
 
 /* harmony default export */ __webpack_exports__["a"] = (Field);
@@ -33602,12 +33602,12 @@ var ReactBankCard = function (_Component) {
 }(__WEBPACK_IMPORTED_MODULE_1_react__["Component"]);
 
 ReactBankCard.propTypes = {
-  cvc: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string,
-  expirationMonth: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string,
-  expirationYear: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string,
+  cvc: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.oneOfType([__WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string, __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.number]),
+  expirationMonth: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.oneOfType([__WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string, __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.number]),
+  expirationYear: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.oneOfType([__WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string, __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.number]),
   highlighted: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.object,
   name: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string,
-  number: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string,
+  number: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.oneOfType([__WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string, __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.number]),
   verso: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.bool
 };
 
