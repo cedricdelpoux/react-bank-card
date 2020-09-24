@@ -30,8 +30,8 @@
   "dependencies": {
     "credit-card-regex": "^2.0.0",
     "luhn": "^2.1.0",
-    "prop-types": "^15.5.10",
-    "styled-components": "^2.1.2"
+    "prop-types": "^15.6.2",
+    "styled-components": "^4.0.0"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
